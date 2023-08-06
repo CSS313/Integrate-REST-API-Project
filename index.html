@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrage REST API Project</title>
+    <style>
+        .product-list-item {
+            margin: 1rem;
+        }
+        li {
+            display: inline;
+            margin: 1rem;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <form action="#">
+        <label for="price">Selling Price:</label>
+        <input type="number" id="price" name="price" value="0"><br><br>
+        <label for="product">Product Name:</label>
+        <input type="text" id="product" name="product" value=""><br><br>
+        <input type="submit" id="submit-btn" value="Add Product">
+    </form>
+    <h1><strong>Products</strong></h1>
+    <ul id="product-list">
+        <!-- <div class = "product-list-item">
+            <li class="prodli">Nikon Camera</li>
+            <li class="priceli">20000</li>
+            <button class="delete-btn">Delete Product</button>
+        </div>     -->
+       
+    </ul>
+    <div>
+        <h2><strong>Total Value Worth of Products: Rs</strong><span id="total"></span></h2>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>
